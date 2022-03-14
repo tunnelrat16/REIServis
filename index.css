@@ -35,9 +35,8 @@ button {
     border-radius: 3px;
 }
 
-.city {
-    width: 250px;
-    height: 150px;
+.people {
+    width: 150px;
     margin: 0 10px;
 }
 
@@ -51,22 +50,36 @@ a {
     text-decoration: none;
 }
 
-#row {
-    list-style: none;
-    display: inline-flex ;
-    flex-flow: row nowrap;
-    justify-content: left;
-    padding: 0;
+main {
+    display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 2fr;    
+    padding: 5px; 
+    margin-top: 50px;     
 }
 
-
-
-article {
-    display: inline-block;
-    width: 900px;
-    height: 500px; 
-    padding: 5px;      
+.tagline {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
 }
+
+.stacey {
+    margin-top: 50px;
+    grid-row: 1 / span 2;
+    grid-column: 2 / span 1;
+}
+
+.peoplepics {
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+}
+
+.peoplepics {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr;    
+}
+
 
 
 h2 { 
@@ -79,19 +92,17 @@ h3 {
     font-size: 30px;
 }
 
-#leftside p {
+.tagline p {
     font-size: 30px;
 }
 
-#rightside p {
+.stacey p {
     font-size: 20px;
 }
 
-.Stacey {
-    width: 315px;
-    height: 400px;
+.Staceypic {
+    width: 450px;
     margin: 10px;
-    padding-left: 270px;
 }
 
 
@@ -122,8 +133,5 @@ footer div {
     padding: 50px;
     font-size: 25px;
 }
-
-
-
 
 
