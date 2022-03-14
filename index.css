@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 { 
+    font-size: 60px;
+    color: hsl(202, 100%, 38%);
+}
+
+header ul {
+    display: flex;
+    flex-flow: row nowrap;
+    list-style: none;
+}
+
+header li + li {
+    margin-left: 24px;
+}
+
+button {
+    background-color: hsl(202, 100%, 38%);
+    color:hsl(202, 16%, 86%);
+    border: none;
+    padding: 16px;
+    font-weight: 700;
+    border-radius: 3px;
+}
+
+.city {
+    width: 250px;
+    height: 150px;
+    margin: 0 10px;
+}
+
+.logo {
+    width: 60px;
+    height: 50px;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+#row {
+    list-style: none;
+    display: inline-flex ;
+    flex-flow: row nowrap;
+    justify-content: left;
+    padding: 0;
+}
+
+
+
+article {
+    display: inline-block;
+    width: 900px;
+    height: 500px; 
+    padding: 5px;      
+}
+
+
+h2 { 
+    font-size: 40px;
+    
+}
+
+h3 {
+    text-align: center;
+    font-size: 30px;
+}
+
+#leftside p {
+    font-size: 30px;
+}
+
+#rightside p {
+    font-size: 20px;
+}
+
+.Stacey {
+    width: 315px;
+    height: 400px;
+    margin: 10px;
+    padding-left: 270px;
+}
+
+
+.Sarah {
+    width: 200px;
+    border-radius: 200%;
+}
+
+
+footer div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.high {
+    list-style: none;
+}
+
+.Icons {
+    width: 20px;
+    height: 20px;
+    justify-items: flex-end;
+}
+
+#Sarah {
+    text-align: center;
+    padding: 50px;
+    font-size: 25px;
+}
+
+
+
+
+
