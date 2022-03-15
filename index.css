@@ -4,31 +4,52 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+.REIlogo {
+    width: 100px;
+}
 
 header {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-h1 { 
-    font-size: 60px;
-    color: hsl(202, 100%, 38%);
-}
-
-header ul {
-    display: flex;
     flex-flow: row nowrap;
     list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
 }
+
+nav>ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav>ul>li {
+    float: left;
+}
+
+nav>ul>li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: larger;
+}
+
+ul>li {
+    list-style-type: none;
+}
+
 
 header li + li {
     margin-left: 24px;
 }
 
 button {
-    background-color: hsl(202, 100%, 38%);
-    color:hsl(202, 16%, 86%);
+    background-color: white;
+    color: black;
     border: none;
     padding: 16px;
     font-weight: 700;
@@ -52,10 +73,10 @@ a {
 
 main {
     display: grid;
-grid-template-columns: 1fr 1fr;
-grid-template-rows: 1fr 2fr;    
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;    
     padding: 5px; 
-    margin-top: 50px;     
+    margin-top: 50px;   
 }
 
 .tagline {
@@ -77,14 +98,13 @@ grid-template-rows: 1fr 2fr;
 .peoplepics {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-grid-template-rows: 1fr 1fr;    
+    grid-template-rows: 1fr 1fr;    
 }
 
 
 
 h2 { 
-    font-size: 40px;
-    
+    font-size: 40px;  
 }
 
 h3 {
