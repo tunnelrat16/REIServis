@@ -153,10 +153,17 @@ footer div {
     list-style: none;
 }
 
+.followus {
+    float: right;
+}
+
+.followus small {
+    padding-right: 5px;
+}
+
 .Icons {
-    width: 20px;
-    height: 20px;
-    justify-items: flex-end;
+    width: 25px;
+    height: 25px;
 }
 
 #Sarah {
@@ -164,5 +171,7 @@ footer div {
     padding: 50px;
     font-size: 30px;
 }
+
+
 
 
