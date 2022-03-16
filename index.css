@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
-
 body {
     font-family: "Roboto", sans-serif;
     font-weight: bolder;
@@ -11,8 +10,6 @@ body {
 
 header {
     display: flex;
-    flex-flow: row nowrap;
-    list-style: none;
     justify-content: space-between;
     align-items: center;
     background-color: black;
@@ -25,16 +22,16 @@ nav>ul {
     padding: 0;
 }
 
-
 nav>ul>li {
-    float: left;
+    display: inline-block;
+    vertical-align: top;
 }
 
 nav>ul>li>a {
     display: block;
     color: white;
     text-align: center;
-    padding: 25px;
+    padding: 20px;
     text-decoration: none;
     font-weight: bold;
     font-size: larger;
@@ -44,7 +41,7 @@ ul>li {
     list-style-type: none;
 }
 
-header li + li {
+header li+li {
     margin-left: 24px;
 }
 
@@ -60,15 +57,15 @@ header li + li {
 }
 
 .people {
-    width: 150px;
+    width: 60%;
     margin: 0 10px;
 }
 
 main {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 2fr;    
-    padding: 50px; 
+    grid-template-rows: 1fr 2fr;
+    padding: 50px;
     background-image: url(background.jpg);
 }
 
@@ -80,7 +77,6 @@ main {
 .tagline p {
     font-size: 30px;
 }
-
 
 .stacey {
     margin-top: 55px;
@@ -97,16 +93,15 @@ main {
 
 .stacey p {
     font-size: 20px;
-    width: 550px;
+    width: 100%;
     text-align: center;
-    margin-top: 10px ;
+    margin-top: 10px;
 }
 
 .Staceypic {
-    width: 450px;
+    width: 70%;
     border-radius: 8px;
 }
-
 
 .peoplepics {
     grid-row: 2 / span 1;
@@ -116,17 +111,17 @@ main {
 .peoplepics {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;    
+    grid-template-rows: 1fr 1fr;
 }
 
-h2 { 
-    font-size: 40px; 
-    margin-bottom: 20px ; 
+h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
 }
 
 h3 {
     font-size: 30px;
-    margin-top: 10px ;
+    margin-top: 10px;
 }
 
 .Sarahpic {
@@ -139,18 +134,16 @@ h3 {
     text-align: center;
     padding: 50px;
     font-size: 30px;
-
 }
 
 footer {
     padding-top: 50px;
 }
 
-
 .lowernavbar {
     display: grid;
     grid-template-columns: 4fr 1fr 1fr 1fr auto;
-    grid-template-rows: auto auto;  
+    grid-template-rows: auto auto;
 }
 
 .logo {
@@ -216,11 +209,14 @@ footer {
     text-decoration: none;
     font-weight: bold;
     font-size: larger;
-    color:black;
+    color: black;
 }
 
 .followus {
-    float: right;
+    display: inline-block;
+    position: relative;
+    left: 75%;
+    transform: translate(-100%);
 }
 
 .followus small {
@@ -246,20 +242,20 @@ footer {
     height: 10%
 }
 
-@media (max-width: 1050px){
+@media (max-width: 1050px) {
     header {
-       display: flex;
-       list-style: none;
-       justify-content: space-between;
-       align-items: center;
-       margin: 0;
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
     }
-    header li + li {
-      margin-left: 0;
+    header li+li {
+        margin-left: 0;
     }
     main {
         grid-template-columns: auto;
-        grid-template-rows: auto auto auto; 
+        grid-template-rows: auto auto auto;
         background-image: none;
     }
     body {
@@ -270,33 +266,38 @@ footer {
         grid-column: 1 / span 1;
     }
     #Sarah {
-      display: flex;
-      flex-flow: column nowrap;
-      align-items: center;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
     }
     .lowernavbar {
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(5, 1fr);
         grid-template-rows: auto;
     }
-    .logo { display:none; 
+    .logo {
+        display: none;
     }
-    #lowernav1 {grid-row: 1 / span 1;
+    #lowernav1 {
+        grid-row: 1 / span 1;
+        grid-column: 1 / span 1;
+        padding-top: 25px;
+        padding-right: 5px;
+    }
+    #lowernav2 {
+        grid-row: 1 / span 1;
         grid-column: 2 / span 1;
         padding-top: 25px;
-    padding-right: 5px; 
+        padding-right: 5px;
     }
-    #lowernav2 {grid-row: 1 / span 1;
+    #lowernav3 {
+        grid-row: 1 / span 1;
         grid-column: 3 / span 1;
         padding-top: 25px;
-    padding-right: 5px; 
+        padding-right: 5px;
     }
-    #lowernav3 {grid-row: 1 / span 1;
+    .topbutton {
+        grid-row: 1 / span 1;
         grid-column: 4 / span 1;
-        padding-top: 25px;
-    padding-right: 5px; 
-    }
-    .topbutton {grid-row: 1 / span 1;
-        grid-column: 5 / span 1;
         background-color: black;
         color: white;
         border: none;
@@ -306,10 +307,11 @@ footer {
         cursor: pointer;
         text-decoration: none;
         text-align: center;
-        margin: 10px 10px 50px; 
+        margin: 10px 10px 50px;
     }
-    .lowerbutton {grid-row: 1 / span 1;
-        grid-column: 6 / span 1;
+    .lowerbutton {
+        grid-row: 1 / span 1;
+        grid-column: 5 / span 1;
         background-color: black;
         color: white;
         border: none;
@@ -323,5 +325,11 @@ footer {
     }
     .lowernav {
         font-size: 15px;
+    }
+    .followus {
+        display: inline-block;
+        position: relative;
+        left: 50%;
+        transform: translate(-100%);
     }
 }
